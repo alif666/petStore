@@ -22,15 +22,30 @@ if (!empty($_POST['petEmail'])) {
 //get email ends
 
 
-//get email 
+//get  address 
 $petAddress = "";
-if (!empty($_POST['petEmail'])) {
-	$petEmail = $_POST['petEmail'];
+if (!empty($_POST['petAddress'])) {
+	$petAddress = $_POST['petAddress'];
 }
-//get email ends
+//get address ends
+
+//get  contact number 
+$petContact = "";
+if (!empty($_POST['petContact'])) {
+	$petContact = $_POST['petContact'];
+}
+//get contact ends
+
+
+
 
 $target_dir = "images/petImage/";
 $target_file = $target_dir.$petName.'_'.basename($_FILES["fileToUpload"]["name"]);
+
+
+//for database storing
+$dbTargetFile = $petName.'_'.basename($_FILES["fileToUpload"]["name"]);
+
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 // Check if image file is a actual image or fake image

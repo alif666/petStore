@@ -86,60 +86,62 @@ $resultQuery =  $conn->query($query);
 			  <div class="modal-content">
 				<div class="modal-header">
 				  <button type="button" class="close" data-dismiss="modal">&times;</button>
-				  <h4 class="modal-title">Sell your Pet</h4>
+				  <CENTER><h4 class="modal-title">Sell your Pet</h4></CENTER>
 				</div>
 				<div class="modal-body">
-				  <!--form to sell an item--->
-						<form class="form-horizontal" action="upload.php" method = "POST" enctype="multipart/form-data">
-							<div class="form-group">
-							  <label class="control-label col-sm-2" for="name">Name:</label>
-							  <div class="col-sm-10">
-								<input type="text" class="form-control" placeholder="Enter pet's Name" name="petName">
-							  </div>
-							</div>
-							<div class="form-group">
-							  <label class="control-label col-sm-2" for="name">Price:</label>
-							  <div class="col-sm-10">
-								<input type="number" class="form-control" placeholder="Enter pet's Price" name="petPrice">
-							  </div>
-							</div>
-							<div class="form-group">
-							  <label class="control-label col-sm-2" for="email">Email:</label>
-							  <div class="col-sm-10">
-								<input type="email" class="form-control" id="email" placeholder="Enter your email" name="petEmail">
-							  </div>
-							</div>
-							<div class="form-group">
-							  <label class="control-label col-sm-2" for="name">Address:</label>
-							  <div class="col-sm-10">
-								<input type="text" class="form-control" placeholder="Enter your address" name="petAddress">
-							  </div>
-							</div>
-							<div class="form-group">
-							  <label class="control-label col-sm-2" for="name">Contact :</label>
-							  <div class="col-sm-10">
-								<input type="text" class="form-control" placeholder="Mobile Number" name="contact">
-							  </div>
-							</div>
-							<div class="form-group">
-							  <label class="control-label col-sm-2" for="pwd">Password:</label>
-							  <div class="col-sm-10">          
-								<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
-							  </div>
-							</div>
-							<div class="form-group">
-							  <label class="control-label col-sm-2" for="pwd">Image :</label>
-							  <div class="col-sm-10">          
-								<input type="file" name="fileToUpload" id="fileToUpload">
-							  </div>
-							</div>
+					<div class= "row">
+							  <!--form to sell an item--->
+								<div class = "col-sm-7">
+									<form class="form-horizontal" action="upload.php" method = "POST" enctype="multipart/form-data">
+										<div class="form-group">
+										  <label class="control-label col-sm-2" for="name">Name</label>
+										  <div class="col-sm-10">
+											<input type="text" class="form-control" placeholder="Enter pet's Name" name="petName" required>
+										  </div>
+										</div>
+										<div class="form-group">
+										  <label class="control-label col-sm-2" for="name">Price</label>
+										  <div class="col-sm-10">
+											<input type="number" class="form-control" placeholder="Enter pet's Price" name="petPrice" required>
+										  </div>
+										</div>
+										<div class="form-group">
+										  <label class="control-label col-sm-2" for="email">Email</label>
+										  <div class="col-sm-10">
+											<input type="email" class="form-control" id="email" placeholder="Enter your email" name="petEmail" required>
+										  </div>
+										</div>
+										<div class="form-group">
+										  <label class="control-label col-sm-2" for="name">Address</label>
+										  <div class="col-sm-10">
+											<input type="text" class="form-control" placeholder="Enter your address" name="petAddress" required>
+										  </div>
+										</div>
+										<div class="form-group">
+										  <label class="control-label col-sm-2" for="name">Contact</label>
+										  <div class="col-sm-10">
+											<input type="text" class="form-control" placeholder="Mobile Number" name="petContact" required>
+										  </div>
+										</div>
 
-							<div class="form-group">        
-							  <div class="col-sm-offset-2 col-sm-10">
-								<button type="submit" class="btn btn-baby" value="Upload Image" name="submit">Submit</button>
-							  </div>
-							</div>
-						  </form>
+										<div class="form-group">
+										  <label class="control-label col-sm-2" for="pwd">Image</label>
+										  <div class="col-sm-10">          
+											<input type="file" name="fileToUpload" id="fileToUpload">
+										  </div>
+										</div>
+
+										<div class="form-group">        
+										  <div class="col-sm-offset-2 col-sm-10">
+											<button type="submit" class="btn btn-baby" value="Upload Image" name="submit">Submit</button>
+										  </div>
+										</div>
+									  </form>
+								</div>
+								<div class = "col-sm-5">
+									<img src ="images/cryingPet.png" class = "img-reponsive" height = "480px" >
+								</div>
+					</div>
 				  <!--form to sell an item ends-->
 				</div>
 				<div class="modal-footer">
