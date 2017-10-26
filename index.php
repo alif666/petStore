@@ -90,11 +90,35 @@ $resultQuery =  $conn->query($query);
 				</div>
 				<div class="modal-body">
 				  <!--form to sell an item--->
-						<form class="form-horizontal" action="/action_page.php">
+						<form class="form-horizontal" action="upload.php" method = "POST" enctype="multipart/form-data">
+							<div class="form-group">
+							  <label class="control-label col-sm-2" for="name">Name:</label>
+							  <div class="col-sm-10">
+								<input type="text" class="form-control" placeholder="Enter pet's Name" name="petName">
+							  </div>
+							</div>
+							<div class="form-group">
+							  <label class="control-label col-sm-2" for="name">Price:</label>
+							  <div class="col-sm-10">
+								<input type="number" class="form-control" placeholder="Enter pet's Price" name="petPrice">
+							  </div>
+							</div>
 							<div class="form-group">
 							  <label class="control-label col-sm-2" for="email">Email:</label>
 							  <div class="col-sm-10">
-								<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+								<input type="email" class="form-control" id="email" placeholder="Enter your email" name="petEmail">
+							  </div>
+							</div>
+							<div class="form-group">
+							  <label class="control-label col-sm-2" for="name">Address:</label>
+							  <div class="col-sm-10">
+								<input type="text" class="form-control" placeholder="Enter your address" name="petAddress">
+							  </div>
+							</div>
+							<div class="form-group">
+							  <label class="control-label col-sm-2" for="name">Contact :</label>
+							  <div class="col-sm-10">
+								<input type="text" class="form-control" placeholder="Mobile Number" name="contact">
 							  </div>
 							</div>
 							<div class="form-group">
@@ -103,18 +127,23 @@ $resultQuery =  $conn->query($query);
 								<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
 							  </div>
 							</div>
-							<div class="form-group">        
+							<div class="form-group">
+							  <label class="control-label col-sm-2" for="pwd">Image :</label>
+							  <div class="col-sm-10">          
+								<input type="file" name="fileToUpload" id="fileToUpload">
+							  </div>
 							</div>
+
 							<div class="form-group">        
 							  <div class="col-sm-offset-2 col-sm-10">
-								<button type="submit" class="btn btn-default">Submit</button>
+								<button type="submit" class="btn btn-baby" value="Upload Image" name="submit">Submit</button>
 							  </div>
 							</div>
 						  </form>
 				  <!--form to sell an item ends-->
 				</div>
 				<div class="modal-footer">
-				  <center><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></center>
+				  <center><button type="button" class="btn btn-baby" data-dismiss="modal">Close</button></center>
 				</div>
 			  </div>
 			</div>
