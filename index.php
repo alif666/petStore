@@ -7,7 +7,26 @@ $resultQuery =  $conn->query($query);
 <html lang="en">
 <head>
 
-  <title>Petly</title>
+    <!--  
+    Document Title
+    =============================================
+    -->
+    <title>Petly !!!</title>
+    <!--  
+    Favicons
+    =============================================
+    -->
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logoLogin.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="">
+    <meta name="theme-color" content="#ffffff">
+    <!--  
+    Stylesheets
+    =============================================
+    
+    -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
